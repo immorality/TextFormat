@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:60351/UpperService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:60351/UpperService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUpperService_Upper_InputMessage">
+    <wsdl:part name="parameters" element="tns:Upper" />
+  </wsdl:message>
+  <wsdl:message name="IUpperService_Upper_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpperResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpperService_Lower_InputMessage">
+    <wsdl:part name="parameters" element="tns:Lower" />
+  </wsdl:message>
+  <wsdl:message name="IUpperService_Lower_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LowerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpperService_FirstLetterOfSentenceToUpper_InputMessage">
+    <wsdl:part name="parameters" element="tns:FirstLetterOfSentenceToUpper" />
+  </wsdl:message>
+  <wsdl:message name="IUpperService_FirstLetterOfSentenceToUpper_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FirstLetterOfSentenceToUpperResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpperService_Refactor_InputMessage">
+    <wsdl:part name="parameters" element="tns:Refactor" />
+  </wsdl:message>
+  <wsdl:message name="IUpperService_Refactor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RefactorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpperService_SpaceAfterPunctuationMark_InputMessage">
+    <wsdl:part name="parameters" element="tns:SpaceAfterPunctuationMark" />
+  </wsdl:message>
+  <wsdl:message name="IUpperService_SpaceAfterPunctuationMark_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SpaceAfterPunctuationMarkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpperService_CountOfSymbols_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountOfSymbols" />
+  </wsdl:message>
+  <wsdl:message name="IUpperService_CountOfSymbols_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountOfSymbolsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpperService_Remove_InputMessage">
+    <wsdl:part name="parameters" element="tns:Remove" />
+  </wsdl:message>
+  <wsdl:message name="IUpperService_Remove_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUpperService_Capitalize_InputMessage">
+    <wsdl:part name="parameters" element="tns:Capitalize" />
+  </wsdl:message>
+  <wsdl:message name="IUpperService_Capitalize_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CapitalizeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUpperService">
+    <wsdl:operation name="Upper">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpperService/Upper" message="tns:IUpperService_Upper_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpperService/UpperResponse" message="tns:IUpperService_Upper_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Lower">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpperService/Lower" message="tns:IUpperService_Lower_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpperService/LowerResponse" message="tns:IUpperService_Lower_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FirstLetterOfSentenceToUpper">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpperService/FirstLetterOfSentenceToUpper" message="tns:IUpperService_FirstLetterOfSentenceToUpper_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpperService/FirstLetterOfSentenceToUpperResponse" message="tns:IUpperService_FirstLetterOfSentenceToUpper_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Refactor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpperService/Refactor" message="tns:IUpperService_Refactor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpperService/RefactorResponse" message="tns:IUpperService_Refactor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SpaceAfterPunctuationMark">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpperService/SpaceAfterPunctuationMark" message="tns:IUpperService_SpaceAfterPunctuationMark_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpperService/SpaceAfterPunctuationMarkResponse" message="tns:IUpperService_SpaceAfterPunctuationMark_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CountOfSymbols">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpperService/CountOfSymbols" message="tns:IUpperService_CountOfSymbols_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpperService/CountOfSymbolsResponse" message="tns:IUpperService_CountOfSymbols_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Remove">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpperService/Remove" message="tns:IUpperService_Remove_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpperService/RemoveResponse" message="tns:IUpperService_Remove_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Capitalize">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUpperService/Capitalize" message="tns:IUpperService_Capitalize_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUpperService/CapitalizeResponse" message="tns:IUpperService_Capitalize_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IUpperService" type="tns:IUpperService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Upper">
+      <soap:operation soapAction="http://tempuri.org/IUpperService/Upper" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Lower">
+      <soap:operation soapAction="http://tempuri.org/IUpperService/Lower" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FirstLetterOfSentenceToUpper">
+      <soap:operation soapAction="http://tempuri.org/IUpperService/FirstLetterOfSentenceToUpper" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Refactor">
+      <soap:operation soapAction="http://tempuri.org/IUpperService/Refactor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpaceAfterPunctuationMark">
+      <soap:operation soapAction="http://tempuri.org/IUpperService/SpaceAfterPunctuationMark" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CountOfSymbols">
+      <soap:operation soapAction="http://tempuri.org/IUpperService/CountOfSymbols" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Remove">
+      <soap:operation soapAction="http://tempuri.org/IUpperService/Remove" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Capitalize">
+      <soap:operation soapAction="http://tempuri.org/IUpperService/Capitalize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IUpperService" binding="tns:BasicHttpBinding_IUpperService">
+      <soap:address location="http://localhost:60351/UpperService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

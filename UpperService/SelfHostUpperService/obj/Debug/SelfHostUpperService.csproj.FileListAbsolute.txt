@@ -1,0 +1,10 @@
+C:\Users\Sverige\source\repos\UpperService\SelfHostUpperService\bin\Debug\SelfHostUpperService.exe.config
+C:\Users\Sverige\source\repos\UpperService\SelfHostUpperService\bin\Debug\SelfHostUpperService.exe
+C:\Users\Sverige\source\repos\UpperService\SelfHostUpperService\bin\Debug\SelfHostUpperService.pdb
+C:\Users\Sverige\source\repos\UpperService\SelfHostUpperService\bin\Debug\UpperServiceLibrary.dll
+C:\Users\Sverige\source\repos\UpperService\SelfHostUpperService\bin\Debug\UpperServiceLibrary.pdb
+C:\Users\Sverige\source\repos\UpperService\SelfHostUpperService\bin\Debug\UpperServiceLibrary.dll.config
+C:\Users\Sverige\source\repos\UpperService\SelfHostUpperService\obj\Debug\SelfHostUpperService.csprojResolveAssemblyReference.cache
+C:\Users\Sverige\source\repos\UpperService\SelfHostUpperService\obj\Debug\SelfHostUpperService.csproj.CoreCompileInputs.cache
+C:\Users\Sverige\source\repos\UpperService\SelfHostUpperService\obj\Debug\SelfHostUpperService.exe
+C:\Users\Sverige\source\repos\UpperService\SelfHostUpperService\obj\Debug\SelfHostUpperService.pdb

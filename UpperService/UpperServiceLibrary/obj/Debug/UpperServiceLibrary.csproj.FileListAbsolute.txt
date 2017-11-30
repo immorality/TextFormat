@@ -1,0 +1,7 @@
+C:\Users\Sverige\source\repos\UpperService\UpperServiceLibrary\bin\Debug\UpperServiceLibrary.dll.config
+C:\Users\Sverige\source\repos\UpperService\UpperServiceLibrary\bin\Debug\UpperServiceLibrary.dll
+C:\Users\Sverige\source\repos\UpperService\UpperServiceLibrary\bin\Debug\UpperServiceLibrary.pdb
+C:\Users\Sverige\source\repos\UpperService\UpperServiceLibrary\obj\Debug\UpperServiceLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Sverige\source\repos\UpperService\UpperServiceLibrary\obj\Debug\UpperServiceLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Sverige\source\repos\UpperService\UpperServiceLibrary\obj\Debug\UpperServiceLibrary.dll
+C:\Users\Sverige\source\repos\UpperService\UpperServiceLibrary\obj\Debug\UpperServiceLibrary.pdb
